@@ -1,0 +1,116 @@
+/* Reset styles to avoid default browser stylings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    padding-top: 30px;  /* Adjusted for the fixed header */
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+.container {
+    flex: 1 0 auto;
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+    margin-bottom: 20px;  /* Added to match the padding-top of body */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    z-index: 1000;
+    background-color: #333;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.challenges {
+    margin-top: 40px;
+}
+
+.challenges div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.challenges img {
+    max-width: 200px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.custom-footer {
+    flex-shrink: 0;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.footer-content p,
+.footer-content a {
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.footer-content a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-content a:hover {
+    color: #ddd;
+}
+
+.section-spacing {
+    margin-top: 50px;
+}
